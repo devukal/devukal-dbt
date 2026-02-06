@@ -1,5 +1,6 @@
 version: 2
 
+
 models:
   - name: employee
     description: "DBT Model for employee table"
@@ -8,10 +9,10 @@ models:
         tests:
           - unique
           - not_null
-          
-
-config
-            
+      - name: emp_salary
+        tests:
+          - value_check
+           
 
 sources:
   - name: employee
